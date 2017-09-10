@@ -1,0 +1,472 @@
+/************************************************************************
+  file: includes/flrheader.flh
+
+  Author(s): Guizhen Yang
+	     Michael Kifer
+
+  Copyright (C) by
+       The Research Foundation of the State University of New York, 1999-2013.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+       http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+
+  This file is automatically included by the FLORA-2 compiler.
+************************************************************************/
+
+
+/************************************************************************
+  Note: This file should contain Macros only!
+
+  If FLORA_DUMP is defined: preprocessing for user-friendly output.
+
+  If any of these macros are changed, the corresponding wrappers in
+  flrwrapper.P must also be changed
+************************************************************************/
+
+
+
+
+/* File:      flora_prefix.flh -- FLORA-2 prefixes
+**
+** Author(s): Michael Kifer
+**	      Guizhen Yang
+**
+** Contact:   flora-users@lists.sourceforge.net
+**
+** Copyright (C) by
+**      The Research Foundation of the State University of New York, 1999-2013;
+**      and Vulcan, Inc., 2008-2013.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**      http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+**
+*/
+
+
+/******************************************************************************
+  Flora prefix
+
+  All Flora symbols begin with this prefix.
+******************************************************************************/
+/* Prefix for F-logic and HiLog predicates */
+
+
+
+
+
+/******************************************************************************
+  Attaching FLORA_PREFIX
+
+  The argument to this Macro should be quoted.
+******************************************************************************/
+
+
+
+/******************************************************************************
+  Strings following FLORA_PREFIX
+
+  These strings should be quoted.
+******************************************************************************/
+/* Keep "mod" in the name of a formula wrapper right after FLORA_PREFIX
+   We rely on this to identify meta wrappers */
+
+
+
+/*  Trie for keeping skeletons of defined facts -- debugging */
+
+
+/*  Trie for storing used symbols names */
+
+
+
+
+/******************************************************************************
+  Module and trie prefixes
+******************************************************************************/
+/* prefix to construct Flora module predicates. */
+
+
+/*  prefix to name Flora storage trie for a module. */
+
+
+
+/* prefix to name Flora fld storage trie for a module. */
+
+
+/* prefix to name Flora fls storage trie for a module. */
+
+
+
+/****************************************************************************
+  F-logic atom prefixes for predicates that are used to distinguish F-logic
+  wrappers in the trailers, the user program, base facts, etc.
+****************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************
+  Lengths of prefixes of F-logic wrappers
+******************************************************************************/
+
+
+
+/****************************************************************************
+  Prefixes that are used for F-logic wrappers in rule bodies of user programs.
+  They are called "debuggin prefixes" because they were introduced to help
+  implement the debugging feature that catches undefined methods.
+  Note:
+     naf^, dyna^, dynz^ are the outermost prefixes
+     neg^ is the next outermost
+****************************************************************************/
+
+
+
+
+
+
+
+
+
+
+/* Prefixes used for checking undefinedness */
+
+
+
+/* Corresponding 1-arg macros */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******* these are used in inheritance closure axioms *******/
+
+
+
+
+
+
+
+
+
+/******* these are for transactions in LIBMOD *******/
+
+
+
+
+
+
+
+/******************************************************************************
+  Lengths of prefixes that are used in the wrappers to the left of module name
+
+  Note: We need to remember that these prefixes are enclosed in quotes.
+        But we need the actual atom length that Prolog uses. So, we deduct 2.
+******************************************************************************/
+
+
+
+/* length of FLORA_PREFIX'FLORA_MODULE_TAG */
+
+
+
+
+
+
+
+
+
+
+
+
+
+%% support for undefinedness checks
+
+
+%% used for generating new oids statically
+%% We had previously #1'FLORA_COMPILATION_ID', but this caused gpp error in
+%% \dump(file). Apparently a gpp bug. So changed to X'FLORA_COMPILATION_ID'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'_$_$_flora''mod''main''tblflapply'(s3,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s4,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s5,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s6,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s7,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s8,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s9,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s200,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s40,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s42,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s41,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s44,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s43,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s46,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s45,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s48,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s47,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s49,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s51,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s50,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s53,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s52,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s55,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s54,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s57,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s56,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s59,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s58,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s101,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s100,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s60,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s62,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s61,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s64,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s63,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s66,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s65,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s68,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s67,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s69,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s71,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s70,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s73,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s72,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s75,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s74,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s77,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s76,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s79,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s202,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s78,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s201,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s121,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s120,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s80,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s123,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s122,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s82,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s81,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s84,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s83,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s86,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s118,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s85,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s117,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s88,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s87,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s119,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s114,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s89,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s113,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s116,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s115,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s110,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s91,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s112,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s90,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s111,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s93,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s92,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s95,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s94,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s97,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s107,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s96,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s106,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s99,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s109,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s98,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s108,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s103,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s102,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s105,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s104,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s143,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s142,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s145,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s144,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s141,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s140,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s139,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s136,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s135,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s138,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s137,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s132,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s131,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s134,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s133,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s130,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s129,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s128,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s125,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s124,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s127,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s126,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s165,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s164,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s167,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s166,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s161,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s160,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s163,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s162,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s158,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s157,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s159,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s154,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s153,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s156,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s155,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s150,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s152,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s151,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s147,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s146,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s149,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s148,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s181,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s180,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s187,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s186,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s189,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s188,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s183,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s182,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s185,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s184,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s179,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s170,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s176,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s175,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s178,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s177,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s172,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s171,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s174,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s173,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s169,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s168,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s190,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s192,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s191,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s198,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s197,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s199,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s194,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s193,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s196,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s195,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s11,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s10,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s13,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s12,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s15,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s14,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s17,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s16,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s19,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s18,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s20,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s22,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s21,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s24,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s23,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s26,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s25,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s28,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s27,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s29,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s31,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s30,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s33,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s32,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s35,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s34,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s37,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s36,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s39,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s38,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s0,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s1,a0,__newcontextvar3).
+'_$_$_flora''mod''main''tblflapply'(s2,a0,__newcontextvar3).

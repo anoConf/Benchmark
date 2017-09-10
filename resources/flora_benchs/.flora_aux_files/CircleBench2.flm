@@ -1,0 +1,18 @@
+#include "flrheader.flh"
+
+'_$_$_flora''prop_descriptor'(4,'CircleBench2.flr',FLORA_THIS_MODULE_NAME,type,rule,'_$_$_flora''descr_vars').
+'_$_$_flora''rule_enabled'(4,'CircleBench2.flr',FLORA_THIS_MODULE_NAME).
+'_$_$_flora''tag_descriptor'(4,'CircleBench2.flr',FLORA_THIS_MODULE_NAME,r0,'_$_$_flora''descr_vars').
+'_$_$_flora''bool_descriptor'(4,'CircleBench2.flr',FLORA_THIS_MODULE_NAME,defeasible,'_$_$_flora''descr_vars').
+'_$_$_flora''prop_descriptor'(6,'CircleBench2.flr',FLORA_THIS_MODULE_NAME,type,rule,'_$_$_flora''descr_vars').
+'_$_$_flora''rule_enabled'(6,'CircleBench2.flr',FLORA_THIS_MODULE_NAME).
+'_$_$_flora''tag_descriptor'(6,'CircleBench2.flr',FLORA_THIS_MODULE_NAME,r1,'_$_$_flora''descr_vars').
+'_$_$_flora''bool_descriptor'(6,'CircleBench2.flr',FLORA_THIS_MODULE_NAME,defeasible,'_$_$_flora''descr_vars').
+'_$_$_flora''prop_descriptor'(8,'CircleBench2.flr',FLORA_THIS_MODULE_NAME,type,rule,'_$_$_flora''descr_vars').
+'_$_$_flora''rule_enabled'(8,'CircleBench2.flr',FLORA_THIS_MODULE_NAME).
+'_$_$_flora''tag_descriptor'(8,'CircleBench2.flr',FLORA_THIS_MODULE_NAME,r2,'_$_$_flora''descr_vars').
+'_$_$_flora''bool_descriptor'(8,'CircleBench2.flr',FLORA_THIS_MODULE_NAME,defeasible,'_$_$_flora''descr_vars').
+'_$_$_flora''prop_descriptor'(10,'CircleBench2.flr',FLORA_THIS_MODULE_NAME,type,rule,'_$_$_flora''descr_vars').
+'_$_$_flora''tag_descriptor'(10,'CircleBench2.flr',FLORA_THIS_MODULE_NAME,10,'_$_$_flora''descr_vars').
+'_$_$_flora''rule_enabled'(10,'CircleBench2.flr',FLORA_THIS_MODULE_NAME).
+'_$_$_flora''bool_descriptor'(10,'CircleBench2.flr',FLORA_THIS_MODULE_NAME,strict,'_$_$_flora''descr_vars').

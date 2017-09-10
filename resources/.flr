@@ -1,0 +1,1814 @@
+:- use_argumentation_theory. 
+p0(a0).
+t(a0).
+q0(a0).
+@{rps} @@{defeasible} s0(?X0) :- p300(?X0).
+
+@{rnp} @@{defeasible} np300(?X0) :- q300(?X0).
+
+@{rns} @@{defeasible} ns(?X0) :- s300(?X0).
+
+@{rs} @@{defeasible} s(?X0) :- t(?X0).
+
+@{rp1} @@{defeasible} p1(?X0) :- p0(?X0).
+
+@{rq1} @@{defeasible} q1(?X0) :- q0(?X0).
+
+@{rs1} @@{defeasible} s1(?X0) :- s0(?X0).
+
+@{rp2} @@{defeasible} p2(?X0) :- p1(?X0).
+
+@{rq2} @@{defeasible} q2(?X0) :- q1(?X0).
+
+@{rs2} @@{defeasible} s2(?X0) :- s1(?X0).
+
+@{rp3} @@{defeasible} p3(?X0) :- p2(?X0).
+
+@{rq3} @@{defeasible} q3(?X0) :- q2(?X0).
+
+@{rs3} @@{defeasible} s3(?X0) :- s2(?X0).
+
+@{rp4} @@{defeasible} p4(?X0) :- p3(?X0).
+
+@{rq4} @@{defeasible} q4(?X0) :- q3(?X0).
+
+@{rs4} @@{defeasible} s4(?X0) :- s3(?X0).
+
+@{rp5} @@{defeasible} p5(?X0) :- p4(?X0).
+
+@{rq5} @@{defeasible} q5(?X0) :- q4(?X0).
+
+@{rs5} @@{defeasible} s5(?X0) :- s4(?X0).
+
+@{rp6} @@{defeasible} p6(?X0) :- p5(?X0).
+
+@{rq6} @@{defeasible} q6(?X0) :- q5(?X0).
+
+@{rs6} @@{defeasible} s6(?X0) :- s5(?X0).
+
+@{rp7} @@{defeasible} p7(?X0) :- p6(?X0).
+
+@{rq7} @@{defeasible} q7(?X0) :- q6(?X0).
+
+@{rs7} @@{defeasible} s7(?X0) :- s6(?X0).
+
+@{rp8} @@{defeasible} p8(?X0) :- p7(?X0).
+
+@{rq8} @@{defeasible} q8(?X0) :- q7(?X0).
+
+@{rs8} @@{defeasible} s8(?X0) :- s7(?X0).
+
+@{rp9} @@{defeasible} p9(?X0) :- p8(?X0).
+
+@{rq9} @@{defeasible} q9(?X0) :- q8(?X0).
+
+@{rs9} @@{defeasible} s9(?X0) :- s8(?X0).
+
+@{rp10} @@{defeasible} p10(?X0) :- p9(?X0).
+
+@{rq10} @@{defeasible} q10(?X0) :- q9(?X0).
+
+@{rs10} @@{defeasible} s10(?X0) :- s9(?X0).
+
+@{rp11} @@{defeasible} p11(?X0) :- p10(?X0).
+
+@{rq11} @@{defeasible} q11(?X0) :- q10(?X0).
+
+@{rs11} @@{defeasible} s11(?X0) :- s10(?X0).
+
+@{rp12} @@{defeasible} p12(?X0) :- p11(?X0).
+
+@{rq12} @@{defeasible} q12(?X0) :- q11(?X0).
+
+@{rs12} @@{defeasible} s12(?X0) :- s11(?X0).
+
+@{rp13} @@{defeasible} p13(?X0) :- p12(?X0).
+
+@{rq13} @@{defeasible} q13(?X0) :- q12(?X0).
+
+@{rs13} @@{defeasible} s13(?X0) :- s12(?X0).
+
+@{rp14} @@{defeasible} p14(?X0) :- p13(?X0).
+
+@{rq14} @@{defeasible} q14(?X0) :- q13(?X0).
+
+@{rs14} @@{defeasible} s14(?X0) :- s13(?X0).
+
+@{rp15} @@{defeasible} p15(?X0) :- p14(?X0).
+
+@{rq15} @@{defeasible} q15(?X0) :- q14(?X0).
+
+@{rs15} @@{defeasible} s15(?X0) :- s14(?X0).
+
+@{rp16} @@{defeasible} p16(?X0) :- p15(?X0).
+
+@{rq16} @@{defeasible} q16(?X0) :- q15(?X0).
+
+@{rs16} @@{defeasible} s16(?X0) :- s15(?X0).
+
+@{rp17} @@{defeasible} p17(?X0) :- p16(?X0).
+
+@{rq17} @@{defeasible} q17(?X0) :- q16(?X0).
+
+@{rs17} @@{defeasible} s17(?X0) :- s16(?X0).
+
+@{rp18} @@{defeasible} p18(?X0) :- p17(?X0).
+
+@{rq18} @@{defeasible} q18(?X0) :- q17(?X0).
+
+@{rs18} @@{defeasible} s18(?X0) :- s17(?X0).
+
+@{rp19} @@{defeasible} p19(?X0) :- p18(?X0).
+
+@{rq19} @@{defeasible} q19(?X0) :- q18(?X0).
+
+@{rs19} @@{defeasible} s19(?X0) :- s18(?X0).
+
+@{rp20} @@{defeasible} p20(?X0) :- p19(?X0).
+
+@{rq20} @@{defeasible} q20(?X0) :- q19(?X0).
+
+@{rs20} @@{defeasible} s20(?X0) :- s19(?X0).
+
+@{rp21} @@{defeasible} p21(?X0) :- p20(?X0).
+
+@{rq21} @@{defeasible} q21(?X0) :- q20(?X0).
+
+@{rs21} @@{defeasible} s21(?X0) :- s20(?X0).
+
+@{rp22} @@{defeasible} p22(?X0) :- p21(?X0).
+
+@{rq22} @@{defeasible} q22(?X0) :- q21(?X0).
+
+@{rs22} @@{defeasible} s22(?X0) :- s21(?X0).
+
+@{rp23} @@{defeasible} p23(?X0) :- p22(?X0).
+
+@{rq23} @@{defeasible} q23(?X0) :- q22(?X0).
+
+@{rs23} @@{defeasible} s23(?X0) :- s22(?X0).
+
+@{rp24} @@{defeasible} p24(?X0) :- p23(?X0).
+
+@{rq24} @@{defeasible} q24(?X0) :- q23(?X0).
+
+@{rs24} @@{defeasible} s24(?X0) :- s23(?X0).
+
+@{rp25} @@{defeasible} p25(?X0) :- p24(?X0).
+
+@{rq25} @@{defeasible} q25(?X0) :- q24(?X0).
+
+@{rs25} @@{defeasible} s25(?X0) :- s24(?X0).
+
+@{rp26} @@{defeasible} p26(?X0) :- p25(?X0).
+
+@{rq26} @@{defeasible} q26(?X0) :- q25(?X0).
+
+@{rs26} @@{defeasible} s26(?X0) :- s25(?X0).
+
+@{rp27} @@{defeasible} p27(?X0) :- p26(?X0).
+
+@{rq27} @@{defeasible} q27(?X0) :- q26(?X0).
+
+@{rs27} @@{defeasible} s27(?X0) :- s26(?X0).
+
+@{rp28} @@{defeasible} p28(?X0) :- p27(?X0).
+
+@{rq28} @@{defeasible} q28(?X0) :- q27(?X0).
+
+@{rs28} @@{defeasible} s28(?X0) :- s27(?X0).
+
+@{rp29} @@{defeasible} p29(?X0) :- p28(?X0).
+
+@{rq29} @@{defeasible} q29(?X0) :- q28(?X0).
+
+@{rs29} @@{defeasible} s29(?X0) :- s28(?X0).
+
+@{rp30} @@{defeasible} p30(?X0) :- p29(?X0).
+
+@{rq30} @@{defeasible} q30(?X0) :- q29(?X0).
+
+@{rs30} @@{defeasible} s30(?X0) :- s29(?X0).
+
+@{rp31} @@{defeasible} p31(?X0) :- p30(?X0).
+
+@{rq31} @@{defeasible} q31(?X0) :- q30(?X0).
+
+@{rs31} @@{defeasible} s31(?X0) :- s30(?X0).
+
+@{rp32} @@{defeasible} p32(?X0) :- p31(?X0).
+
+@{rq32} @@{defeasible} q32(?X0) :- q31(?X0).
+
+@{rs32} @@{defeasible} s32(?X0) :- s31(?X0).
+
+@{rp33} @@{defeasible} p33(?X0) :- p32(?X0).
+
+@{rq33} @@{defeasible} q33(?X0) :- q32(?X0).
+
+@{rs33} @@{defeasible} s33(?X0) :- s32(?X0).
+
+@{rp34} @@{defeasible} p34(?X0) :- p33(?X0).
+
+@{rq34} @@{defeasible} q34(?X0) :- q33(?X0).
+
+@{rs34} @@{defeasible} s34(?X0) :- s33(?X0).
+
+@{rp35} @@{defeasible} p35(?X0) :- p34(?X0).
+
+@{rq35} @@{defeasible} q35(?X0) :- q34(?X0).
+
+@{rs35} @@{defeasible} s35(?X0) :- s34(?X0).
+
+@{rp36} @@{defeasible} p36(?X0) :- p35(?X0).
+
+@{rq36} @@{defeasible} q36(?X0) :- q35(?X0).
+
+@{rs36} @@{defeasible} s36(?X0) :- s35(?X0).
+
+@{rp37} @@{defeasible} p37(?X0) :- p36(?X0).
+
+@{rq37} @@{defeasible} q37(?X0) :- q36(?X0).
+
+@{rs37} @@{defeasible} s37(?X0) :- s36(?X0).
+
+@{rp38} @@{defeasible} p38(?X0) :- p37(?X0).
+
+@{rq38} @@{defeasible} q38(?X0) :- q37(?X0).
+
+@{rs38} @@{defeasible} s38(?X0) :- s37(?X0).
+
+@{rp39} @@{defeasible} p39(?X0) :- p38(?X0).
+
+@{rq39} @@{defeasible} q39(?X0) :- q38(?X0).
+
+@{rs39} @@{defeasible} s39(?X0) :- s38(?X0).
+
+@{rp40} @@{defeasible} p40(?X0) :- p39(?X0).
+
+@{rq40} @@{defeasible} q40(?X0) :- q39(?X0).
+
+@{rs40} @@{defeasible} s40(?X0) :- s39(?X0).
+
+@{rp41} @@{defeasible} p41(?X0) :- p40(?X0).
+
+@{rq41} @@{defeasible} q41(?X0) :- q40(?X0).
+
+@{rs41} @@{defeasible} s41(?X0) :- s40(?X0).
+
+@{rp42} @@{defeasible} p42(?X0) :- p41(?X0).
+
+@{rq42} @@{defeasible} q42(?X0) :- q41(?X0).
+
+@{rs42} @@{defeasible} s42(?X0) :- s41(?X0).
+
+@{rp43} @@{defeasible} p43(?X0) :- p42(?X0).
+
+@{rq43} @@{defeasible} q43(?X0) :- q42(?X0).
+
+@{rs43} @@{defeasible} s43(?X0) :- s42(?X0).
+
+@{rp44} @@{defeasible} p44(?X0) :- p43(?X0).
+
+@{rq44} @@{defeasible} q44(?X0) :- q43(?X0).
+
+@{rs44} @@{defeasible} s44(?X0) :- s43(?X0).
+
+@{rp45} @@{defeasible} p45(?X0) :- p44(?X0).
+
+@{rq45} @@{defeasible} q45(?X0) :- q44(?X0).
+
+@{rs45} @@{defeasible} s45(?X0) :- s44(?X0).
+
+@{rp46} @@{defeasible} p46(?X0) :- p45(?X0).
+
+@{rq46} @@{defeasible} q46(?X0) :- q45(?X0).
+
+@{rs46} @@{defeasible} s46(?X0) :- s45(?X0).
+
+@{rp47} @@{defeasible} p47(?X0) :- p46(?X0).
+
+@{rq47} @@{defeasible} q47(?X0) :- q46(?X0).
+
+@{rs47} @@{defeasible} s47(?X0) :- s46(?X0).
+
+@{rp48} @@{defeasible} p48(?X0) :- p47(?X0).
+
+@{rq48} @@{defeasible} q48(?X0) :- q47(?X0).
+
+@{rs48} @@{defeasible} s48(?X0) :- s47(?X0).
+
+@{rp49} @@{defeasible} p49(?X0) :- p48(?X0).
+
+@{rq49} @@{defeasible} q49(?X0) :- q48(?X0).
+
+@{rs49} @@{defeasible} s49(?X0) :- s48(?X0).
+
+@{rp50} @@{defeasible} p50(?X0) :- p49(?X0).
+
+@{rq50} @@{defeasible} q50(?X0) :- q49(?X0).
+
+@{rs50} @@{defeasible} s50(?X0) :- s49(?X0).
+
+@{rp51} @@{defeasible} p51(?X0) :- p50(?X0).
+
+@{rq51} @@{defeasible} q51(?X0) :- q50(?X0).
+
+@{rs51} @@{defeasible} s51(?X0) :- s50(?X0).
+
+@{rp52} @@{defeasible} p52(?X0) :- p51(?X0).
+
+@{rq52} @@{defeasible} q52(?X0) :- q51(?X0).
+
+@{rs52} @@{defeasible} s52(?X0) :- s51(?X0).
+
+@{rp53} @@{defeasible} p53(?X0) :- p52(?X0).
+
+@{rq53} @@{defeasible} q53(?X0) :- q52(?X0).
+
+@{rs53} @@{defeasible} s53(?X0) :- s52(?X0).
+
+@{rp54} @@{defeasible} p54(?X0) :- p53(?X0).
+
+@{rq54} @@{defeasible} q54(?X0) :- q53(?X0).
+
+@{rs54} @@{defeasible} s54(?X0) :- s53(?X0).
+
+@{rp55} @@{defeasible} p55(?X0) :- p54(?X0).
+
+@{rq55} @@{defeasible} q55(?X0) :- q54(?X0).
+
+@{rs55} @@{defeasible} s55(?X0) :- s54(?X0).
+
+@{rp56} @@{defeasible} p56(?X0) :- p55(?X0).
+
+@{rq56} @@{defeasible} q56(?X0) :- q55(?X0).
+
+@{rs56} @@{defeasible} s56(?X0) :- s55(?X0).
+
+@{rp57} @@{defeasible} p57(?X0) :- p56(?X0).
+
+@{rq57} @@{defeasible} q57(?X0) :- q56(?X0).
+
+@{rs57} @@{defeasible} s57(?X0) :- s56(?X0).
+
+@{rp58} @@{defeasible} p58(?X0) :- p57(?X0).
+
+@{rq58} @@{defeasible} q58(?X0) :- q57(?X0).
+
+@{rs58} @@{defeasible} s58(?X0) :- s57(?X0).
+
+@{rp59} @@{defeasible} p59(?X0) :- p58(?X0).
+
+@{rq59} @@{defeasible} q59(?X0) :- q58(?X0).
+
+@{rs59} @@{defeasible} s59(?X0) :- s58(?X0).
+
+@{rp60} @@{defeasible} p60(?X0) :- p59(?X0).
+
+@{rq60} @@{defeasible} q60(?X0) :- q59(?X0).
+
+@{rs60} @@{defeasible} s60(?X0) :- s59(?X0).
+
+@{rp61} @@{defeasible} p61(?X0) :- p60(?X0).
+
+@{rq61} @@{defeasible} q61(?X0) :- q60(?X0).
+
+@{rs61} @@{defeasible} s61(?X0) :- s60(?X0).
+
+@{rp62} @@{defeasible} p62(?X0) :- p61(?X0).
+
+@{rq62} @@{defeasible} q62(?X0) :- q61(?X0).
+
+@{rs62} @@{defeasible} s62(?X0) :- s61(?X0).
+
+@{rp63} @@{defeasible} p63(?X0) :- p62(?X0).
+
+@{rq63} @@{defeasible} q63(?X0) :- q62(?X0).
+
+@{rs63} @@{defeasible} s63(?X0) :- s62(?X0).
+
+@{rp64} @@{defeasible} p64(?X0) :- p63(?X0).
+
+@{rq64} @@{defeasible} q64(?X0) :- q63(?X0).
+
+@{rs64} @@{defeasible} s64(?X0) :- s63(?X0).
+
+@{rp65} @@{defeasible} p65(?X0) :- p64(?X0).
+
+@{rq65} @@{defeasible} q65(?X0) :- q64(?X0).
+
+@{rs65} @@{defeasible} s65(?X0) :- s64(?X0).
+
+@{rp66} @@{defeasible} p66(?X0) :- p65(?X0).
+
+@{rq66} @@{defeasible} q66(?X0) :- q65(?X0).
+
+@{rs66} @@{defeasible} s66(?X0) :- s65(?X0).
+
+@{rp67} @@{defeasible} p67(?X0) :- p66(?X0).
+
+@{rq67} @@{defeasible} q67(?X0) :- q66(?X0).
+
+@{rs67} @@{defeasible} s67(?X0) :- s66(?X0).
+
+@{rp68} @@{defeasible} p68(?X0) :- p67(?X0).
+
+@{rq68} @@{defeasible} q68(?X0) :- q67(?X0).
+
+@{rs68} @@{defeasible} s68(?X0) :- s67(?X0).
+
+@{rp69} @@{defeasible} p69(?X0) :- p68(?X0).
+
+@{rq69} @@{defeasible} q69(?X0) :- q68(?X0).
+
+@{rs69} @@{defeasible} s69(?X0) :- s68(?X0).
+
+@{rp70} @@{defeasible} p70(?X0) :- p69(?X0).
+
+@{rq70} @@{defeasible} q70(?X0) :- q69(?X0).
+
+@{rs70} @@{defeasible} s70(?X0) :- s69(?X0).
+
+@{rp71} @@{defeasible} p71(?X0) :- p70(?X0).
+
+@{rq71} @@{defeasible} q71(?X0) :- q70(?X0).
+
+@{rs71} @@{defeasible} s71(?X0) :- s70(?X0).
+
+@{rp72} @@{defeasible} p72(?X0) :- p71(?X0).
+
+@{rq72} @@{defeasible} q72(?X0) :- q71(?X0).
+
+@{rs72} @@{defeasible} s72(?X0) :- s71(?X0).
+
+@{rp73} @@{defeasible} p73(?X0) :- p72(?X0).
+
+@{rq73} @@{defeasible} q73(?X0) :- q72(?X0).
+
+@{rs73} @@{defeasible} s73(?X0) :- s72(?X0).
+
+@{rp74} @@{defeasible} p74(?X0) :- p73(?X0).
+
+@{rq74} @@{defeasible} q74(?X0) :- q73(?X0).
+
+@{rs74} @@{defeasible} s74(?X0) :- s73(?X0).
+
+@{rp75} @@{defeasible} p75(?X0) :- p74(?X0).
+
+@{rq75} @@{defeasible} q75(?X0) :- q74(?X0).
+
+@{rs75} @@{defeasible} s75(?X0) :- s74(?X0).
+
+@{rp76} @@{defeasible} p76(?X0) :- p75(?X0).
+
+@{rq76} @@{defeasible} q76(?X0) :- q75(?X0).
+
+@{rs76} @@{defeasible} s76(?X0) :- s75(?X0).
+
+@{rp77} @@{defeasible} p77(?X0) :- p76(?X0).
+
+@{rq77} @@{defeasible} q77(?X0) :- q76(?X0).
+
+@{rs77} @@{defeasible} s77(?X0) :- s76(?X0).
+
+@{rp78} @@{defeasible} p78(?X0) :- p77(?X0).
+
+@{rq78} @@{defeasible} q78(?X0) :- q77(?X0).
+
+@{rs78} @@{defeasible} s78(?X0) :- s77(?X0).
+
+@{rp79} @@{defeasible} p79(?X0) :- p78(?X0).
+
+@{rq79} @@{defeasible} q79(?X0) :- q78(?X0).
+
+@{rs79} @@{defeasible} s79(?X0) :- s78(?X0).
+
+@{rp80} @@{defeasible} p80(?X0) :- p79(?X0).
+
+@{rq80} @@{defeasible} q80(?X0) :- q79(?X0).
+
+@{rs80} @@{defeasible} s80(?X0) :- s79(?X0).
+
+@{rp81} @@{defeasible} p81(?X0) :- p80(?X0).
+
+@{rq81} @@{defeasible} q81(?X0) :- q80(?X0).
+
+@{rs81} @@{defeasible} s81(?X0) :- s80(?X0).
+
+@{rp82} @@{defeasible} p82(?X0) :- p81(?X0).
+
+@{rq82} @@{defeasible} q82(?X0) :- q81(?X0).
+
+@{rs82} @@{defeasible} s82(?X0) :- s81(?X0).
+
+@{rp83} @@{defeasible} p83(?X0) :- p82(?X0).
+
+@{rq83} @@{defeasible} q83(?X0) :- q82(?X0).
+
+@{rs83} @@{defeasible} s83(?X0) :- s82(?X0).
+
+@{rp84} @@{defeasible} p84(?X0) :- p83(?X0).
+
+@{rq84} @@{defeasible} q84(?X0) :- q83(?X0).
+
+@{rs84} @@{defeasible} s84(?X0) :- s83(?X0).
+
+@{rp85} @@{defeasible} p85(?X0) :- p84(?X0).
+
+@{rq85} @@{defeasible} q85(?X0) :- q84(?X0).
+
+@{rs85} @@{defeasible} s85(?X0) :- s84(?X0).
+
+@{rp86} @@{defeasible} p86(?X0) :- p85(?X0).
+
+@{rq86} @@{defeasible} q86(?X0) :- q85(?X0).
+
+@{rs86} @@{defeasible} s86(?X0) :- s85(?X0).
+
+@{rp87} @@{defeasible} p87(?X0) :- p86(?X0).
+
+@{rq87} @@{defeasible} q87(?X0) :- q86(?X0).
+
+@{rs87} @@{defeasible} s87(?X0) :- s86(?X0).
+
+@{rp88} @@{defeasible} p88(?X0) :- p87(?X0).
+
+@{rq88} @@{defeasible} q88(?X0) :- q87(?X0).
+
+@{rs88} @@{defeasible} s88(?X0) :- s87(?X0).
+
+@{rp89} @@{defeasible} p89(?X0) :- p88(?X0).
+
+@{rq89} @@{defeasible} q89(?X0) :- q88(?X0).
+
+@{rs89} @@{defeasible} s89(?X0) :- s88(?X0).
+
+@{rp90} @@{defeasible} p90(?X0) :- p89(?X0).
+
+@{rq90} @@{defeasible} q90(?X0) :- q89(?X0).
+
+@{rs90} @@{defeasible} s90(?X0) :- s89(?X0).
+
+@{rp91} @@{defeasible} p91(?X0) :- p90(?X0).
+
+@{rq91} @@{defeasible} q91(?X0) :- q90(?X0).
+
+@{rs91} @@{defeasible} s91(?X0) :- s90(?X0).
+
+@{rp92} @@{defeasible} p92(?X0) :- p91(?X0).
+
+@{rq92} @@{defeasible} q92(?X0) :- q91(?X0).
+
+@{rs92} @@{defeasible} s92(?X0) :- s91(?X0).
+
+@{rp93} @@{defeasible} p93(?X0) :- p92(?X0).
+
+@{rq93} @@{defeasible} q93(?X0) :- q92(?X0).
+
+@{rs93} @@{defeasible} s93(?X0) :- s92(?X0).
+
+@{rp94} @@{defeasible} p94(?X0) :- p93(?X0).
+
+@{rq94} @@{defeasible} q94(?X0) :- q93(?X0).
+
+@{rs94} @@{defeasible} s94(?X0) :- s93(?X0).
+
+@{rp95} @@{defeasible} p95(?X0) :- p94(?X0).
+
+@{rq95} @@{defeasible} q95(?X0) :- q94(?X0).
+
+@{rs95} @@{defeasible} s95(?X0) :- s94(?X0).
+
+@{rp96} @@{defeasible} p96(?X0) :- p95(?X0).
+
+@{rq96} @@{defeasible} q96(?X0) :- q95(?X0).
+
+@{rs96} @@{defeasible} s96(?X0) :- s95(?X0).
+
+@{rp97} @@{defeasible} p97(?X0) :- p96(?X0).
+
+@{rq97} @@{defeasible} q97(?X0) :- q96(?X0).
+
+@{rs97} @@{defeasible} s97(?X0) :- s96(?X0).
+
+@{rp98} @@{defeasible} p98(?X0) :- p97(?X0).
+
+@{rq98} @@{defeasible} q98(?X0) :- q97(?X0).
+
+@{rs98} @@{defeasible} s98(?X0) :- s97(?X0).
+
+@{rp99} @@{defeasible} p99(?X0) :- p98(?X0).
+
+@{rq99} @@{defeasible} q99(?X0) :- q98(?X0).
+
+@{rs99} @@{defeasible} s99(?X0) :- s98(?X0).
+
+@{rp100} @@{defeasible} p100(?X0) :- p99(?X0).
+
+@{rq100} @@{defeasible} q100(?X0) :- q99(?X0).
+
+@{rs100} @@{defeasible} s100(?X0) :- s99(?X0).
+
+@{rp101} @@{defeasible} p101(?X0) :- p100(?X0).
+
+@{rq101} @@{defeasible} q101(?X0) :- q100(?X0).
+
+@{rs101} @@{defeasible} s101(?X0) :- s100(?X0).
+
+@{rp102} @@{defeasible} p102(?X0) :- p101(?X0).
+
+@{rq102} @@{defeasible} q102(?X0) :- q101(?X0).
+
+@{rs102} @@{defeasible} s102(?X0) :- s101(?X0).
+
+@{rp103} @@{defeasible} p103(?X0) :- p102(?X0).
+
+@{rq103} @@{defeasible} q103(?X0) :- q102(?X0).
+
+@{rs103} @@{defeasible} s103(?X0) :- s102(?X0).
+
+@{rp104} @@{defeasible} p104(?X0) :- p103(?X0).
+
+@{rq104} @@{defeasible} q104(?X0) :- q103(?X0).
+
+@{rs104} @@{defeasible} s104(?X0) :- s103(?X0).
+
+@{rp105} @@{defeasible} p105(?X0) :- p104(?X0).
+
+@{rq105} @@{defeasible} q105(?X0) :- q104(?X0).
+
+@{rs105} @@{defeasible} s105(?X0) :- s104(?X0).
+
+@{rp106} @@{defeasible} p106(?X0) :- p105(?X0).
+
+@{rq106} @@{defeasible} q106(?X0) :- q105(?X0).
+
+@{rs106} @@{defeasible} s106(?X0) :- s105(?X0).
+
+@{rp107} @@{defeasible} p107(?X0) :- p106(?X0).
+
+@{rq107} @@{defeasible} q107(?X0) :- q106(?X0).
+
+@{rs107} @@{defeasible} s107(?X0) :- s106(?X0).
+
+@{rp108} @@{defeasible} p108(?X0) :- p107(?X0).
+
+@{rq108} @@{defeasible} q108(?X0) :- q107(?X0).
+
+@{rs108} @@{defeasible} s108(?X0) :- s107(?X0).
+
+@{rp109} @@{defeasible} p109(?X0) :- p108(?X0).
+
+@{rq109} @@{defeasible} q109(?X0) :- q108(?X0).
+
+@{rs109} @@{defeasible} s109(?X0) :- s108(?X0).
+
+@{rp110} @@{defeasible} p110(?X0) :- p109(?X0).
+
+@{rq110} @@{defeasible} q110(?X0) :- q109(?X0).
+
+@{rs110} @@{defeasible} s110(?X0) :- s109(?X0).
+
+@{rp111} @@{defeasible} p111(?X0) :- p110(?X0).
+
+@{rq111} @@{defeasible} q111(?X0) :- q110(?X0).
+
+@{rs111} @@{defeasible} s111(?X0) :- s110(?X0).
+
+@{rp112} @@{defeasible} p112(?X0) :- p111(?X0).
+
+@{rq112} @@{defeasible} q112(?X0) :- q111(?X0).
+
+@{rs112} @@{defeasible} s112(?X0) :- s111(?X0).
+
+@{rp113} @@{defeasible} p113(?X0) :- p112(?X0).
+
+@{rq113} @@{defeasible} q113(?X0) :- q112(?X0).
+
+@{rs113} @@{defeasible} s113(?X0) :- s112(?X0).
+
+@{rp114} @@{defeasible} p114(?X0) :- p113(?X0).
+
+@{rq114} @@{defeasible} q114(?X0) :- q113(?X0).
+
+@{rs114} @@{defeasible} s114(?X0) :- s113(?X0).
+
+@{rp115} @@{defeasible} p115(?X0) :- p114(?X0).
+
+@{rq115} @@{defeasible} q115(?X0) :- q114(?X0).
+
+@{rs115} @@{defeasible} s115(?X0) :- s114(?X0).
+
+@{rp116} @@{defeasible} p116(?X0) :- p115(?X0).
+
+@{rq116} @@{defeasible} q116(?X0) :- q115(?X0).
+
+@{rs116} @@{defeasible} s116(?X0) :- s115(?X0).
+
+@{rp117} @@{defeasible} p117(?X0) :- p116(?X0).
+
+@{rq117} @@{defeasible} q117(?X0) :- q116(?X0).
+
+@{rs117} @@{defeasible} s117(?X0) :- s116(?X0).
+
+@{rp118} @@{defeasible} p118(?X0) :- p117(?X0).
+
+@{rq118} @@{defeasible} q118(?X0) :- q117(?X0).
+
+@{rs118} @@{defeasible} s118(?X0) :- s117(?X0).
+
+@{rp119} @@{defeasible} p119(?X0) :- p118(?X0).
+
+@{rq119} @@{defeasible} q119(?X0) :- q118(?X0).
+
+@{rs119} @@{defeasible} s119(?X0) :- s118(?X0).
+
+@{rp120} @@{defeasible} p120(?X0) :- p119(?X0).
+
+@{rq120} @@{defeasible} q120(?X0) :- q119(?X0).
+
+@{rs120} @@{defeasible} s120(?X0) :- s119(?X0).
+
+@{rp121} @@{defeasible} p121(?X0) :- p120(?X0).
+
+@{rq121} @@{defeasible} q121(?X0) :- q120(?X0).
+
+@{rs121} @@{defeasible} s121(?X0) :- s120(?X0).
+
+@{rp122} @@{defeasible} p122(?X0) :- p121(?X0).
+
+@{rq122} @@{defeasible} q122(?X0) :- q121(?X0).
+
+@{rs122} @@{defeasible} s122(?X0) :- s121(?X0).
+
+@{rp123} @@{defeasible} p123(?X0) :- p122(?X0).
+
+@{rq123} @@{defeasible} q123(?X0) :- q122(?X0).
+
+@{rs123} @@{defeasible} s123(?X0) :- s122(?X0).
+
+@{rp124} @@{defeasible} p124(?X0) :- p123(?X0).
+
+@{rq124} @@{defeasible} q124(?X0) :- q123(?X0).
+
+@{rs124} @@{defeasible} s124(?X0) :- s123(?X0).
+
+@{rp125} @@{defeasible} p125(?X0) :- p124(?X0).
+
+@{rq125} @@{defeasible} q125(?X0) :- q124(?X0).
+
+@{rs125} @@{defeasible} s125(?X0) :- s124(?X0).
+
+@{rp126} @@{defeasible} p126(?X0) :- p125(?X0).
+
+@{rq126} @@{defeasible} q126(?X0) :- q125(?X0).
+
+@{rs126} @@{defeasible} s126(?X0) :- s125(?X0).
+
+@{rp127} @@{defeasible} p127(?X0) :- p126(?X0).
+
+@{rq127} @@{defeasible} q127(?X0) :- q126(?X0).
+
+@{rs127} @@{defeasible} s127(?X0) :- s126(?X0).
+
+@{rp128} @@{defeasible} p128(?X0) :- p127(?X0).
+
+@{rq128} @@{defeasible} q128(?X0) :- q127(?X0).
+
+@{rs128} @@{defeasible} s128(?X0) :- s127(?X0).
+
+@{rp129} @@{defeasible} p129(?X0) :- p128(?X0).
+
+@{rq129} @@{defeasible} q129(?X0) :- q128(?X0).
+
+@{rs129} @@{defeasible} s129(?X0) :- s128(?X0).
+
+@{rp130} @@{defeasible} p130(?X0) :- p129(?X0).
+
+@{rq130} @@{defeasible} q130(?X0) :- q129(?X0).
+
+@{rs130} @@{defeasible} s130(?X0) :- s129(?X0).
+
+@{rp131} @@{defeasible} p131(?X0) :- p130(?X0).
+
+@{rq131} @@{defeasible} q131(?X0) :- q130(?X0).
+
+@{rs131} @@{defeasible} s131(?X0) :- s130(?X0).
+
+@{rp132} @@{defeasible} p132(?X0) :- p131(?X0).
+
+@{rq132} @@{defeasible} q132(?X0) :- q131(?X0).
+
+@{rs132} @@{defeasible} s132(?X0) :- s131(?X0).
+
+@{rp133} @@{defeasible} p133(?X0) :- p132(?X0).
+
+@{rq133} @@{defeasible} q133(?X0) :- q132(?X0).
+
+@{rs133} @@{defeasible} s133(?X0) :- s132(?X0).
+
+@{rp134} @@{defeasible} p134(?X0) :- p133(?X0).
+
+@{rq134} @@{defeasible} q134(?X0) :- q133(?X0).
+
+@{rs134} @@{defeasible} s134(?X0) :- s133(?X0).
+
+@{rp135} @@{defeasible} p135(?X0) :- p134(?X0).
+
+@{rq135} @@{defeasible} q135(?X0) :- q134(?X0).
+
+@{rs135} @@{defeasible} s135(?X0) :- s134(?X0).
+
+@{rp136} @@{defeasible} p136(?X0) :- p135(?X0).
+
+@{rq136} @@{defeasible} q136(?X0) :- q135(?X0).
+
+@{rs136} @@{defeasible} s136(?X0) :- s135(?X0).
+
+@{rp137} @@{defeasible} p137(?X0) :- p136(?X0).
+
+@{rq137} @@{defeasible} q137(?X0) :- q136(?X0).
+
+@{rs137} @@{defeasible} s137(?X0) :- s136(?X0).
+
+@{rp138} @@{defeasible} p138(?X0) :- p137(?X0).
+
+@{rq138} @@{defeasible} q138(?X0) :- q137(?X0).
+
+@{rs138} @@{defeasible} s138(?X0) :- s137(?X0).
+
+@{rp139} @@{defeasible} p139(?X0) :- p138(?X0).
+
+@{rq139} @@{defeasible} q139(?X0) :- q138(?X0).
+
+@{rs139} @@{defeasible} s139(?X0) :- s138(?X0).
+
+@{rp140} @@{defeasible} p140(?X0) :- p139(?X0).
+
+@{rq140} @@{defeasible} q140(?X0) :- q139(?X0).
+
+@{rs140} @@{defeasible} s140(?X0) :- s139(?X0).
+
+@{rp141} @@{defeasible} p141(?X0) :- p140(?X0).
+
+@{rq141} @@{defeasible} q141(?X0) :- q140(?X0).
+
+@{rs141} @@{defeasible} s141(?X0) :- s140(?X0).
+
+@{rp142} @@{defeasible} p142(?X0) :- p141(?X0).
+
+@{rq142} @@{defeasible} q142(?X0) :- q141(?X0).
+
+@{rs142} @@{defeasible} s142(?X0) :- s141(?X0).
+
+@{rp143} @@{defeasible} p143(?X0) :- p142(?X0).
+
+@{rq143} @@{defeasible} q143(?X0) :- q142(?X0).
+
+@{rs143} @@{defeasible} s143(?X0) :- s142(?X0).
+
+@{rp144} @@{defeasible} p144(?X0) :- p143(?X0).
+
+@{rq144} @@{defeasible} q144(?X0) :- q143(?X0).
+
+@{rs144} @@{defeasible} s144(?X0) :- s143(?X0).
+
+@{rp145} @@{defeasible} p145(?X0) :- p144(?X0).
+
+@{rq145} @@{defeasible} q145(?X0) :- q144(?X0).
+
+@{rs145} @@{defeasible} s145(?X0) :- s144(?X0).
+
+@{rp146} @@{defeasible} p146(?X0) :- p145(?X0).
+
+@{rq146} @@{defeasible} q146(?X0) :- q145(?X0).
+
+@{rs146} @@{defeasible} s146(?X0) :- s145(?X0).
+
+@{rp147} @@{defeasible} p147(?X0) :- p146(?X0).
+
+@{rq147} @@{defeasible} q147(?X0) :- q146(?X0).
+
+@{rs147} @@{defeasible} s147(?X0) :- s146(?X0).
+
+@{rp148} @@{defeasible} p148(?X0) :- p147(?X0).
+
+@{rq148} @@{defeasible} q148(?X0) :- q147(?X0).
+
+@{rs148} @@{defeasible} s148(?X0) :- s147(?X0).
+
+@{rp149} @@{defeasible} p149(?X0) :- p148(?X0).
+
+@{rq149} @@{defeasible} q149(?X0) :- q148(?X0).
+
+@{rs149} @@{defeasible} s149(?X0) :- s148(?X0).
+
+@{rp150} @@{defeasible} p150(?X0) :- p149(?X0).
+
+@{rq150} @@{defeasible} q150(?X0) :- q149(?X0).
+
+@{rs150} @@{defeasible} s150(?X0) :- s149(?X0).
+
+@{rp151} @@{defeasible} p151(?X0) :- p150(?X0).
+
+@{rq151} @@{defeasible} q151(?X0) :- q150(?X0).
+
+@{rs151} @@{defeasible} s151(?X0) :- s150(?X0).
+
+@{rp152} @@{defeasible} p152(?X0) :- p151(?X0).
+
+@{rq152} @@{defeasible} q152(?X0) :- q151(?X0).
+
+@{rs152} @@{defeasible} s152(?X0) :- s151(?X0).
+
+@{rp153} @@{defeasible} p153(?X0) :- p152(?X0).
+
+@{rq153} @@{defeasible} q153(?X0) :- q152(?X0).
+
+@{rs153} @@{defeasible} s153(?X0) :- s152(?X0).
+
+@{rp154} @@{defeasible} p154(?X0) :- p153(?X0).
+
+@{rq154} @@{defeasible} q154(?X0) :- q153(?X0).
+
+@{rs154} @@{defeasible} s154(?X0) :- s153(?X0).
+
+@{rp155} @@{defeasible} p155(?X0) :- p154(?X0).
+
+@{rq155} @@{defeasible} q155(?X0) :- q154(?X0).
+
+@{rs155} @@{defeasible} s155(?X0) :- s154(?X0).
+
+@{rp156} @@{defeasible} p156(?X0) :- p155(?X0).
+
+@{rq156} @@{defeasible} q156(?X0) :- q155(?X0).
+
+@{rs156} @@{defeasible} s156(?X0) :- s155(?X0).
+
+@{rp157} @@{defeasible} p157(?X0) :- p156(?X0).
+
+@{rq157} @@{defeasible} q157(?X0) :- q156(?X0).
+
+@{rs157} @@{defeasible} s157(?X0) :- s156(?X0).
+
+@{rp158} @@{defeasible} p158(?X0) :- p157(?X0).
+
+@{rq158} @@{defeasible} q158(?X0) :- q157(?X0).
+
+@{rs158} @@{defeasible} s158(?X0) :- s157(?X0).
+
+@{rp159} @@{defeasible} p159(?X0) :- p158(?X0).
+
+@{rq159} @@{defeasible} q159(?X0) :- q158(?X0).
+
+@{rs159} @@{defeasible} s159(?X0) :- s158(?X0).
+
+@{rp160} @@{defeasible} p160(?X0) :- p159(?X0).
+
+@{rq160} @@{defeasible} q160(?X0) :- q159(?X0).
+
+@{rs160} @@{defeasible} s160(?X0) :- s159(?X0).
+
+@{rp161} @@{defeasible} p161(?X0) :- p160(?X0).
+
+@{rq161} @@{defeasible} q161(?X0) :- q160(?X0).
+
+@{rs161} @@{defeasible} s161(?X0) :- s160(?X0).
+
+@{rp162} @@{defeasible} p162(?X0) :- p161(?X0).
+
+@{rq162} @@{defeasible} q162(?X0) :- q161(?X0).
+
+@{rs162} @@{defeasible} s162(?X0) :- s161(?X0).
+
+@{rp163} @@{defeasible} p163(?X0) :- p162(?X0).
+
+@{rq163} @@{defeasible} q163(?X0) :- q162(?X0).
+
+@{rs163} @@{defeasible} s163(?X0) :- s162(?X0).
+
+@{rp164} @@{defeasible} p164(?X0) :- p163(?X0).
+
+@{rq164} @@{defeasible} q164(?X0) :- q163(?X0).
+
+@{rs164} @@{defeasible} s164(?X0) :- s163(?X0).
+
+@{rp165} @@{defeasible} p165(?X0) :- p164(?X0).
+
+@{rq165} @@{defeasible} q165(?X0) :- q164(?X0).
+
+@{rs165} @@{defeasible} s165(?X0) :- s164(?X0).
+
+@{rp166} @@{defeasible} p166(?X0) :- p165(?X0).
+
+@{rq166} @@{defeasible} q166(?X0) :- q165(?X0).
+
+@{rs166} @@{defeasible} s166(?X0) :- s165(?X0).
+
+@{rp167} @@{defeasible} p167(?X0) :- p166(?X0).
+
+@{rq167} @@{defeasible} q167(?X0) :- q166(?X0).
+
+@{rs167} @@{defeasible} s167(?X0) :- s166(?X0).
+
+@{rp168} @@{defeasible} p168(?X0) :- p167(?X0).
+
+@{rq168} @@{defeasible} q168(?X0) :- q167(?X0).
+
+@{rs168} @@{defeasible} s168(?X0) :- s167(?X0).
+
+@{rp169} @@{defeasible} p169(?X0) :- p168(?X0).
+
+@{rq169} @@{defeasible} q169(?X0) :- q168(?X0).
+
+@{rs169} @@{defeasible} s169(?X0) :- s168(?X0).
+
+@{rp170} @@{defeasible} p170(?X0) :- p169(?X0).
+
+@{rq170} @@{defeasible} q170(?X0) :- q169(?X0).
+
+@{rs170} @@{defeasible} s170(?X0) :- s169(?X0).
+
+@{rp171} @@{defeasible} p171(?X0) :- p170(?X0).
+
+@{rq171} @@{defeasible} q171(?X0) :- q170(?X0).
+
+@{rs171} @@{defeasible} s171(?X0) :- s170(?X0).
+
+@{rp172} @@{defeasible} p172(?X0) :- p171(?X0).
+
+@{rq172} @@{defeasible} q172(?X0) :- q171(?X0).
+
+@{rs172} @@{defeasible} s172(?X0) :- s171(?X0).
+
+@{rp173} @@{defeasible} p173(?X0) :- p172(?X0).
+
+@{rq173} @@{defeasible} q173(?X0) :- q172(?X0).
+
+@{rs173} @@{defeasible} s173(?X0) :- s172(?X0).
+
+@{rp174} @@{defeasible} p174(?X0) :- p173(?X0).
+
+@{rq174} @@{defeasible} q174(?X0) :- q173(?X0).
+
+@{rs174} @@{defeasible} s174(?X0) :- s173(?X0).
+
+@{rp175} @@{defeasible} p175(?X0) :- p174(?X0).
+
+@{rq175} @@{defeasible} q175(?X0) :- q174(?X0).
+
+@{rs175} @@{defeasible} s175(?X0) :- s174(?X0).
+
+@{rp176} @@{defeasible} p176(?X0) :- p175(?X0).
+
+@{rq176} @@{defeasible} q176(?X0) :- q175(?X0).
+
+@{rs176} @@{defeasible} s176(?X0) :- s175(?X0).
+
+@{rp177} @@{defeasible} p177(?X0) :- p176(?X0).
+
+@{rq177} @@{defeasible} q177(?X0) :- q176(?X0).
+
+@{rs177} @@{defeasible} s177(?X0) :- s176(?X0).
+
+@{rp178} @@{defeasible} p178(?X0) :- p177(?X0).
+
+@{rq178} @@{defeasible} q178(?X0) :- q177(?X0).
+
+@{rs178} @@{defeasible} s178(?X0) :- s177(?X0).
+
+@{rp179} @@{defeasible} p179(?X0) :- p178(?X0).
+
+@{rq179} @@{defeasible} q179(?X0) :- q178(?X0).
+
+@{rs179} @@{defeasible} s179(?X0) :- s178(?X0).
+
+@{rp180} @@{defeasible} p180(?X0) :- p179(?X0).
+
+@{rq180} @@{defeasible} q180(?X0) :- q179(?X0).
+
+@{rs180} @@{defeasible} s180(?X0) :- s179(?X0).
+
+@{rp181} @@{defeasible} p181(?X0) :- p180(?X0).
+
+@{rq181} @@{defeasible} q181(?X0) :- q180(?X0).
+
+@{rs181} @@{defeasible} s181(?X0) :- s180(?X0).
+
+@{rp182} @@{defeasible} p182(?X0) :- p181(?X0).
+
+@{rq182} @@{defeasible} q182(?X0) :- q181(?X0).
+
+@{rs182} @@{defeasible} s182(?X0) :- s181(?X0).
+
+@{rp183} @@{defeasible} p183(?X0) :- p182(?X0).
+
+@{rq183} @@{defeasible} q183(?X0) :- q182(?X0).
+
+@{rs183} @@{defeasible} s183(?X0) :- s182(?X0).
+
+@{rp184} @@{defeasible} p184(?X0) :- p183(?X0).
+
+@{rq184} @@{defeasible} q184(?X0) :- q183(?X0).
+
+@{rs184} @@{defeasible} s184(?X0) :- s183(?X0).
+
+@{rp185} @@{defeasible} p185(?X0) :- p184(?X0).
+
+@{rq185} @@{defeasible} q185(?X0) :- q184(?X0).
+
+@{rs185} @@{defeasible} s185(?X0) :- s184(?X0).
+
+@{rp186} @@{defeasible} p186(?X0) :- p185(?X0).
+
+@{rq186} @@{defeasible} q186(?X0) :- q185(?X0).
+
+@{rs186} @@{defeasible} s186(?X0) :- s185(?X0).
+
+@{rp187} @@{defeasible} p187(?X0) :- p186(?X0).
+
+@{rq187} @@{defeasible} q187(?X0) :- q186(?X0).
+
+@{rs187} @@{defeasible} s187(?X0) :- s186(?X0).
+
+@{rp188} @@{defeasible} p188(?X0) :- p187(?X0).
+
+@{rq188} @@{defeasible} q188(?X0) :- q187(?X0).
+
+@{rs188} @@{defeasible} s188(?X0) :- s187(?X0).
+
+@{rp189} @@{defeasible} p189(?X0) :- p188(?X0).
+
+@{rq189} @@{defeasible} q189(?X0) :- q188(?X0).
+
+@{rs189} @@{defeasible} s189(?X0) :- s188(?X0).
+
+@{rp190} @@{defeasible} p190(?X0) :- p189(?X0).
+
+@{rq190} @@{defeasible} q190(?X0) :- q189(?X0).
+
+@{rs190} @@{defeasible} s190(?X0) :- s189(?X0).
+
+@{rp191} @@{defeasible} p191(?X0) :- p190(?X0).
+
+@{rq191} @@{defeasible} q191(?X0) :- q190(?X0).
+
+@{rs191} @@{defeasible} s191(?X0) :- s190(?X0).
+
+@{rp192} @@{defeasible} p192(?X0) :- p191(?X0).
+
+@{rq192} @@{defeasible} q192(?X0) :- q191(?X0).
+
+@{rs192} @@{defeasible} s192(?X0) :- s191(?X0).
+
+@{rp193} @@{defeasible} p193(?X0) :- p192(?X0).
+
+@{rq193} @@{defeasible} q193(?X0) :- q192(?X0).
+
+@{rs193} @@{defeasible} s193(?X0) :- s192(?X0).
+
+@{rp194} @@{defeasible} p194(?X0) :- p193(?X0).
+
+@{rq194} @@{defeasible} q194(?X0) :- q193(?X0).
+
+@{rs194} @@{defeasible} s194(?X0) :- s193(?X0).
+
+@{rp195} @@{defeasible} p195(?X0) :- p194(?X0).
+
+@{rq195} @@{defeasible} q195(?X0) :- q194(?X0).
+
+@{rs195} @@{defeasible} s195(?X0) :- s194(?X0).
+
+@{rp196} @@{defeasible} p196(?X0) :- p195(?X0).
+
+@{rq196} @@{defeasible} q196(?X0) :- q195(?X0).
+
+@{rs196} @@{defeasible} s196(?X0) :- s195(?X0).
+
+@{rp197} @@{defeasible} p197(?X0) :- p196(?X0).
+
+@{rq197} @@{defeasible} q197(?X0) :- q196(?X0).
+
+@{rs197} @@{defeasible} s197(?X0) :- s196(?X0).
+
+@{rp198} @@{defeasible} p198(?X0) :- p197(?X0).
+
+@{rq198} @@{defeasible} q198(?X0) :- q197(?X0).
+
+@{rs198} @@{defeasible} s198(?X0) :- s197(?X0).
+
+@{rp199} @@{defeasible} p199(?X0) :- p198(?X0).
+
+@{rq199} @@{defeasible} q199(?X0) :- q198(?X0).
+
+@{rs199} @@{defeasible} s199(?X0) :- s198(?X0).
+
+@{rp200} @@{defeasible} p200(?X0) :- p199(?X0).
+
+@{rq200} @@{defeasible} q200(?X0) :- q199(?X0).
+
+@{rs200} @@{defeasible} s200(?X0) :- s199(?X0).
+
+@{rp201} @@{defeasible} p201(?X0) :- p200(?X0).
+
+@{rq201} @@{defeasible} q201(?X0) :- q200(?X0).
+
+@{rs201} @@{defeasible} s201(?X0) :- s200(?X0).
+
+@{rp202} @@{defeasible} p202(?X0) :- p201(?X0).
+
+@{rq202} @@{defeasible} q202(?X0) :- q201(?X0).
+
+@{rs202} @@{defeasible} s202(?X0) :- s201(?X0).
+
+@{rp203} @@{defeasible} p203(?X0) :- p202(?X0).
+
+@{rq203} @@{defeasible} q203(?X0) :- q202(?X0).
+
+@{rs203} @@{defeasible} s203(?X0) :- s202(?X0).
+
+@{rp204} @@{defeasible} p204(?X0) :- p203(?X0).
+
+@{rq204} @@{defeasible} q204(?X0) :- q203(?X0).
+
+@{rs204} @@{defeasible} s204(?X0) :- s203(?X0).
+
+@{rp205} @@{defeasible} p205(?X0) :- p204(?X0).
+
+@{rq205} @@{defeasible} q205(?X0) :- q204(?X0).
+
+@{rs205} @@{defeasible} s205(?X0) :- s204(?X0).
+
+@{rp206} @@{defeasible} p206(?X0) :- p205(?X0).
+
+@{rq206} @@{defeasible} q206(?X0) :- q205(?X0).
+
+@{rs206} @@{defeasible} s206(?X0) :- s205(?X0).
+
+@{rp207} @@{defeasible} p207(?X0) :- p206(?X0).
+
+@{rq207} @@{defeasible} q207(?X0) :- q206(?X0).
+
+@{rs207} @@{defeasible} s207(?X0) :- s206(?X0).
+
+@{rp208} @@{defeasible} p208(?X0) :- p207(?X0).
+
+@{rq208} @@{defeasible} q208(?X0) :- q207(?X0).
+
+@{rs208} @@{defeasible} s208(?X0) :- s207(?X0).
+
+@{rp209} @@{defeasible} p209(?X0) :- p208(?X0).
+
+@{rq209} @@{defeasible} q209(?X0) :- q208(?X0).
+
+@{rs209} @@{defeasible} s209(?X0) :- s208(?X0).
+
+@{rp210} @@{defeasible} p210(?X0) :- p209(?X0).
+
+@{rq210} @@{defeasible} q210(?X0) :- q209(?X0).
+
+@{rs210} @@{defeasible} s210(?X0) :- s209(?X0).
+
+@{rp211} @@{defeasible} p211(?X0) :- p210(?X0).
+
+@{rq211} @@{defeasible} q211(?X0) :- q210(?X0).
+
+@{rs211} @@{defeasible} s211(?X0) :- s210(?X0).
+
+@{rp212} @@{defeasible} p212(?X0) :- p211(?X0).
+
+@{rq212} @@{defeasible} q212(?X0) :- q211(?X0).
+
+@{rs212} @@{defeasible} s212(?X0) :- s211(?X0).
+
+@{rp213} @@{defeasible} p213(?X0) :- p212(?X0).
+
+@{rq213} @@{defeasible} q213(?X0) :- q212(?X0).
+
+@{rs213} @@{defeasible} s213(?X0) :- s212(?X0).
+
+@{rp214} @@{defeasible} p214(?X0) :- p213(?X0).
+
+@{rq214} @@{defeasible} q214(?X0) :- q213(?X0).
+
+@{rs214} @@{defeasible} s214(?X0) :- s213(?X0).
+
+@{rp215} @@{defeasible} p215(?X0) :- p214(?X0).
+
+@{rq215} @@{defeasible} q215(?X0) :- q214(?X0).
+
+@{rs215} @@{defeasible} s215(?X0) :- s214(?X0).
+
+@{rp216} @@{defeasible} p216(?X0) :- p215(?X0).
+
+@{rq216} @@{defeasible} q216(?X0) :- q215(?X0).
+
+@{rs216} @@{defeasible} s216(?X0) :- s215(?X0).
+
+@{rp217} @@{defeasible} p217(?X0) :- p216(?X0).
+
+@{rq217} @@{defeasible} q217(?X0) :- q216(?X0).
+
+@{rs217} @@{defeasible} s217(?X0) :- s216(?X0).
+
+@{rp218} @@{defeasible} p218(?X0) :- p217(?X0).
+
+@{rq218} @@{defeasible} q218(?X0) :- q217(?X0).
+
+@{rs218} @@{defeasible} s218(?X0) :- s217(?X0).
+
+@{rp219} @@{defeasible} p219(?X0) :- p218(?X0).
+
+@{rq219} @@{defeasible} q219(?X0) :- q218(?X0).
+
+@{rs219} @@{defeasible} s219(?X0) :- s218(?X0).
+
+@{rp220} @@{defeasible} p220(?X0) :- p219(?X0).
+
+@{rq220} @@{defeasible} q220(?X0) :- q219(?X0).
+
+@{rs220} @@{defeasible} s220(?X0) :- s219(?X0).
+
+@{rp221} @@{defeasible} p221(?X0) :- p220(?X0).
+
+@{rq221} @@{defeasible} q221(?X0) :- q220(?X0).
+
+@{rs221} @@{defeasible} s221(?X0) :- s220(?X0).
+
+@{rp222} @@{defeasible} p222(?X0) :- p221(?X0).
+
+@{rq222} @@{defeasible} q222(?X0) :- q221(?X0).
+
+@{rs222} @@{defeasible} s222(?X0) :- s221(?X0).
+
+@{rp223} @@{defeasible} p223(?X0) :- p222(?X0).
+
+@{rq223} @@{defeasible} q223(?X0) :- q222(?X0).
+
+@{rs223} @@{defeasible} s223(?X0) :- s222(?X0).
+
+@{rp224} @@{defeasible} p224(?X0) :- p223(?X0).
+
+@{rq224} @@{defeasible} q224(?X0) :- q223(?X0).
+
+@{rs224} @@{defeasible} s224(?X0) :- s223(?X0).
+
+@{rp225} @@{defeasible} p225(?X0) :- p224(?X0).
+
+@{rq225} @@{defeasible} q225(?X0) :- q224(?X0).
+
+@{rs225} @@{defeasible} s225(?X0) :- s224(?X0).
+
+@{rp226} @@{defeasible} p226(?X0) :- p225(?X0).
+
+@{rq226} @@{defeasible} q226(?X0) :- q225(?X0).
+
+@{rs226} @@{defeasible} s226(?X0) :- s225(?X0).
+
+@{rp227} @@{defeasible} p227(?X0) :- p226(?X0).
+
+@{rq227} @@{defeasible} q227(?X0) :- q226(?X0).
+
+@{rs227} @@{defeasible} s227(?X0) :- s226(?X0).
+
+@{rp228} @@{defeasible} p228(?X0) :- p227(?X0).
+
+@{rq228} @@{defeasible} q228(?X0) :- q227(?X0).
+
+@{rs228} @@{defeasible} s228(?X0) :- s227(?X0).
+
+@{rp229} @@{defeasible} p229(?X0) :- p228(?X0).
+
+@{rq229} @@{defeasible} q229(?X0) :- q228(?X0).
+
+@{rs229} @@{defeasible} s229(?X0) :- s228(?X0).
+
+@{rp230} @@{defeasible} p230(?X0) :- p229(?X0).
+
+@{rq230} @@{defeasible} q230(?X0) :- q229(?X0).
+
+@{rs230} @@{defeasible} s230(?X0) :- s229(?X0).
+
+@{rp231} @@{defeasible} p231(?X0) :- p230(?X0).
+
+@{rq231} @@{defeasible} q231(?X0) :- q230(?X0).
+
+@{rs231} @@{defeasible} s231(?X0) :- s230(?X0).
+
+@{rp232} @@{defeasible} p232(?X0) :- p231(?X0).
+
+@{rq232} @@{defeasible} q232(?X0) :- q231(?X0).
+
+@{rs232} @@{defeasible} s232(?X0) :- s231(?X0).
+
+@{rp233} @@{defeasible} p233(?X0) :- p232(?X0).
+
+@{rq233} @@{defeasible} q233(?X0) :- q232(?X0).
+
+@{rs233} @@{defeasible} s233(?X0) :- s232(?X0).
+
+@{rp234} @@{defeasible} p234(?X0) :- p233(?X0).
+
+@{rq234} @@{defeasible} q234(?X0) :- q233(?X0).
+
+@{rs234} @@{defeasible} s234(?X0) :- s233(?X0).
+
+@{rp235} @@{defeasible} p235(?X0) :- p234(?X0).
+
+@{rq235} @@{defeasible} q235(?X0) :- q234(?X0).
+
+@{rs235} @@{defeasible} s235(?X0) :- s234(?X0).
+
+@{rp236} @@{defeasible} p236(?X0) :- p235(?X0).
+
+@{rq236} @@{defeasible} q236(?X0) :- q235(?X0).
+
+@{rs236} @@{defeasible} s236(?X0) :- s235(?X0).
+
+@{rp237} @@{defeasible} p237(?X0) :- p236(?X0).
+
+@{rq237} @@{defeasible} q237(?X0) :- q236(?X0).
+
+@{rs237} @@{defeasible} s237(?X0) :- s236(?X0).
+
+@{rp238} @@{defeasible} p238(?X0) :- p237(?X0).
+
+@{rq238} @@{defeasible} q238(?X0) :- q237(?X0).
+
+@{rs238} @@{defeasible} s238(?X0) :- s237(?X0).
+
+@{rp239} @@{defeasible} p239(?X0) :- p238(?X0).
+
+@{rq239} @@{defeasible} q239(?X0) :- q238(?X0).
+
+@{rs239} @@{defeasible} s239(?X0) :- s238(?X0).
+
+@{rp240} @@{defeasible} p240(?X0) :- p239(?X0).
+
+@{rq240} @@{defeasible} q240(?X0) :- q239(?X0).
+
+@{rs240} @@{defeasible} s240(?X0) :- s239(?X0).
+
+@{rp241} @@{defeasible} p241(?X0) :- p240(?X0).
+
+@{rq241} @@{defeasible} q241(?X0) :- q240(?X0).
+
+@{rs241} @@{defeasible} s241(?X0) :- s240(?X0).
+
+@{rp242} @@{defeasible} p242(?X0) :- p241(?X0).
+
+@{rq242} @@{defeasible} q242(?X0) :- q241(?X0).
+
+@{rs242} @@{defeasible} s242(?X0) :- s241(?X0).
+
+@{rp243} @@{defeasible} p243(?X0) :- p242(?X0).
+
+@{rq243} @@{defeasible} q243(?X0) :- q242(?X0).
+
+@{rs243} @@{defeasible} s243(?X0) :- s242(?X0).
+
+@{rp244} @@{defeasible} p244(?X0) :- p243(?X0).
+
+@{rq244} @@{defeasible} q244(?X0) :- q243(?X0).
+
+@{rs244} @@{defeasible} s244(?X0) :- s243(?X0).
+
+@{rp245} @@{defeasible} p245(?X0) :- p244(?X0).
+
+@{rq245} @@{defeasible} q245(?X0) :- q244(?X0).
+
+@{rs245} @@{defeasible} s245(?X0) :- s244(?X0).
+
+@{rp246} @@{defeasible} p246(?X0) :- p245(?X0).
+
+@{rq246} @@{defeasible} q246(?X0) :- q245(?X0).
+
+@{rs246} @@{defeasible} s246(?X0) :- s245(?X0).
+
+@{rp247} @@{defeasible} p247(?X0) :- p246(?X0).
+
+@{rq247} @@{defeasible} q247(?X0) :- q246(?X0).
+
+@{rs247} @@{defeasible} s247(?X0) :- s246(?X0).
+
+@{rp248} @@{defeasible} p248(?X0) :- p247(?X0).
+
+@{rq248} @@{defeasible} q248(?X0) :- q247(?X0).
+
+@{rs248} @@{defeasible} s248(?X0) :- s247(?X0).
+
+@{rp249} @@{defeasible} p249(?X0) :- p248(?X0).
+
+@{rq249} @@{defeasible} q249(?X0) :- q248(?X0).
+
+@{rs249} @@{defeasible} s249(?X0) :- s248(?X0).
+
+@{rp250} @@{defeasible} p250(?X0) :- p249(?X0).
+
+@{rq250} @@{defeasible} q250(?X0) :- q249(?X0).
+
+@{rs250} @@{defeasible} s250(?X0) :- s249(?X0).
+
+@{rp251} @@{defeasible} p251(?X0) :- p250(?X0).
+
+@{rq251} @@{defeasible} q251(?X0) :- q250(?X0).
+
+@{rs251} @@{defeasible} s251(?X0) :- s250(?X0).
+
+@{rp252} @@{defeasible} p252(?X0) :- p251(?X0).
+
+@{rq252} @@{defeasible} q252(?X0) :- q251(?X0).
+
+@{rs252} @@{defeasible} s252(?X0) :- s251(?X0).
+
+@{rp253} @@{defeasible} p253(?X0) :- p252(?X0).
+
+@{rq253} @@{defeasible} q253(?X0) :- q252(?X0).
+
+@{rs253} @@{defeasible} s253(?X0) :- s252(?X0).
+
+@{rp254} @@{defeasible} p254(?X0) :- p253(?X0).
+
+@{rq254} @@{defeasible} q254(?X0) :- q253(?X0).
+
+@{rs254} @@{defeasible} s254(?X0) :- s253(?X0).
+
+@{rp255} @@{defeasible} p255(?X0) :- p254(?X0).
+
+@{rq255} @@{defeasible} q255(?X0) :- q254(?X0).
+
+@{rs255} @@{defeasible} s255(?X0) :- s254(?X0).
+
+@{rp256} @@{defeasible} p256(?X0) :- p255(?X0).
+
+@{rq256} @@{defeasible} q256(?X0) :- q255(?X0).
+
+@{rs256} @@{defeasible} s256(?X0) :- s255(?X0).
+
+@{rp257} @@{defeasible} p257(?X0) :- p256(?X0).
+
+@{rq257} @@{defeasible} q257(?X0) :- q256(?X0).
+
+@{rs257} @@{defeasible} s257(?X0) :- s256(?X0).
+
+@{rp258} @@{defeasible} p258(?X0) :- p257(?X0).
+
+@{rq258} @@{defeasible} q258(?X0) :- q257(?X0).
+
+@{rs258} @@{defeasible} s258(?X0) :- s257(?X0).
+
+@{rp259} @@{defeasible} p259(?X0) :- p258(?X0).
+
+@{rq259} @@{defeasible} q259(?X0) :- q258(?X0).
+
+@{rs259} @@{defeasible} s259(?X0) :- s258(?X0).
+
+@{rp260} @@{defeasible} p260(?X0) :- p259(?X0).
+
+@{rq260} @@{defeasible} q260(?X0) :- q259(?X0).
+
+@{rs260} @@{defeasible} s260(?X0) :- s259(?X0).
+
+@{rp261} @@{defeasible} p261(?X0) :- p260(?X0).
+
+@{rq261} @@{defeasible} q261(?X0) :- q260(?X0).
+
+@{rs261} @@{defeasible} s261(?X0) :- s260(?X0).
+
+@{rp262} @@{defeasible} p262(?X0) :- p261(?X0).
+
+@{rq262} @@{defeasible} q262(?X0) :- q261(?X0).
+
+@{rs262} @@{defeasible} s262(?X0) :- s261(?X0).
+
+@{rp263} @@{defeasible} p263(?X0) :- p262(?X0).
+
+@{rq263} @@{defeasible} q263(?X0) :- q262(?X0).
+
+@{rs263} @@{defeasible} s263(?X0) :- s262(?X0).
+
+@{rp264} @@{defeasible} p264(?X0) :- p263(?X0).
+
+@{rq264} @@{defeasible} q264(?X0) :- q263(?X0).
+
+@{rs264} @@{defeasible} s264(?X0) :- s263(?X0).
+
+@{rp265} @@{defeasible} p265(?X0) :- p264(?X0).
+
+@{rq265} @@{defeasible} q265(?X0) :- q264(?X0).
+
+@{rs265} @@{defeasible} s265(?X0) :- s264(?X0).
+
+@{rp266} @@{defeasible} p266(?X0) :- p265(?X0).
+
+@{rq266} @@{defeasible} q266(?X0) :- q265(?X0).
+
+@{rs266} @@{defeasible} s266(?X0) :- s265(?X0).
+
+@{rp267} @@{defeasible} p267(?X0) :- p266(?X0).
+
+@{rq267} @@{defeasible} q267(?X0) :- q266(?X0).
+
+@{rs267} @@{defeasible} s267(?X0) :- s266(?X0).
+
+@{rp268} @@{defeasible} p268(?X0) :- p267(?X0).
+
+@{rq268} @@{defeasible} q268(?X0) :- q267(?X0).
+
+@{rs268} @@{defeasible} s268(?X0) :- s267(?X0).
+
+@{rp269} @@{defeasible} p269(?X0) :- p268(?X0).
+
+@{rq269} @@{defeasible} q269(?X0) :- q268(?X0).
+
+@{rs269} @@{defeasible} s269(?X0) :- s268(?X0).
+
+@{rp270} @@{defeasible} p270(?X0) :- p269(?X0).
+
+@{rq270} @@{defeasible} q270(?X0) :- q269(?X0).
+
+@{rs270} @@{defeasible} s270(?X0) :- s269(?X0).
+
+@{rp271} @@{defeasible} p271(?X0) :- p270(?X0).
+
+@{rq271} @@{defeasible} q271(?X0) :- q270(?X0).
+
+@{rs271} @@{defeasible} s271(?X0) :- s270(?X0).
+
+@{rp272} @@{defeasible} p272(?X0) :- p271(?X0).
+
+@{rq272} @@{defeasible} q272(?X0) :- q271(?X0).
+
+@{rs272} @@{defeasible} s272(?X0) :- s271(?X0).
+
+@{rp273} @@{defeasible} p273(?X0) :- p272(?X0).
+
+@{rq273} @@{defeasible} q273(?X0) :- q272(?X0).
+
+@{rs273} @@{defeasible} s273(?X0) :- s272(?X0).
+
+@{rp274} @@{defeasible} p274(?X0) :- p273(?X0).
+
+@{rq274} @@{defeasible} q274(?X0) :- q273(?X0).
+
+@{rs274} @@{defeasible} s274(?X0) :- s273(?X0).
+
+@{rp275} @@{defeasible} p275(?X0) :- p274(?X0).
+
+@{rq275} @@{defeasible} q275(?X0) :- q274(?X0).
+
+@{rs275} @@{defeasible} s275(?X0) :- s274(?X0).
+
+@{rp276} @@{defeasible} p276(?X0) :- p275(?X0).
+
+@{rq276} @@{defeasible} q276(?X0) :- q275(?X0).
+
+@{rs276} @@{defeasible} s276(?X0) :- s275(?X0).
+
+@{rp277} @@{defeasible} p277(?X0) :- p276(?X0).
+
+@{rq277} @@{defeasible} q277(?X0) :- q276(?X0).
+
+@{rs277} @@{defeasible} s277(?X0) :- s276(?X0).
+
+@{rp278} @@{defeasible} p278(?X0) :- p277(?X0).
+
+@{rq278} @@{defeasible} q278(?X0) :- q277(?X0).
+
+@{rs278} @@{defeasible} s278(?X0) :- s277(?X0).
+
+@{rp279} @@{defeasible} p279(?X0) :- p278(?X0).
+
+@{rq279} @@{defeasible} q279(?X0) :- q278(?X0).
+
+@{rs279} @@{defeasible} s279(?X0) :- s278(?X0).
+
+@{rp280} @@{defeasible} p280(?X0) :- p279(?X0).
+
+@{rq280} @@{defeasible} q280(?X0) :- q279(?X0).
+
+@{rs280} @@{defeasible} s280(?X0) :- s279(?X0).
+
+@{rp281} @@{defeasible} p281(?X0) :- p280(?X0).
+
+@{rq281} @@{defeasible} q281(?X0) :- q280(?X0).
+
+@{rs281} @@{defeasible} s281(?X0) :- s280(?X0).
+
+@{rp282} @@{defeasible} p282(?X0) :- p281(?X0).
+
+@{rq282} @@{defeasible} q282(?X0) :- q281(?X0).
+
+@{rs282} @@{defeasible} s282(?X0) :- s281(?X0).
+
+@{rp283} @@{defeasible} p283(?X0) :- p282(?X0).
+
+@{rq283} @@{defeasible} q283(?X0) :- q282(?X0).
+
+@{rs283} @@{defeasible} s283(?X0) :- s282(?X0).
+
+@{rp284} @@{defeasible} p284(?X0) :- p283(?X0).
+
+@{rq284} @@{defeasible} q284(?X0) :- q283(?X0).
+
+@{rs284} @@{defeasible} s284(?X0) :- s283(?X0).
+
+@{rp285} @@{defeasible} p285(?X0) :- p284(?X0).
+
+@{rq285} @@{defeasible} q285(?X0) :- q284(?X0).
+
+@{rs285} @@{defeasible} s285(?X0) :- s284(?X0).
+
+@{rp286} @@{defeasible} p286(?X0) :- p285(?X0).
+
+@{rq286} @@{defeasible} q286(?X0) :- q285(?X0).
+
+@{rs286} @@{defeasible} s286(?X0) :- s285(?X0).
+
+@{rp287} @@{defeasible} p287(?X0) :- p286(?X0).
+
+@{rq287} @@{defeasible} q287(?X0) :- q286(?X0).
+
+@{rs287} @@{defeasible} s287(?X0) :- s286(?X0).
+
+@{rp288} @@{defeasible} p288(?X0) :- p287(?X0).
+
+@{rq288} @@{defeasible} q288(?X0) :- q287(?X0).
+
+@{rs288} @@{defeasible} s288(?X0) :- s287(?X0).
+
+@{rp289} @@{defeasible} p289(?X0) :- p288(?X0).
+
+@{rq289} @@{defeasible} q289(?X0) :- q288(?X0).
+
+@{rs289} @@{defeasible} s289(?X0) :- s288(?X0).
+
+@{rp290} @@{defeasible} p290(?X0) :- p289(?X0).
+
+@{rq290} @@{defeasible} q290(?X0) :- q289(?X0).
+
+@{rs290} @@{defeasible} s290(?X0) :- s289(?X0).
+
+@{rp291} @@{defeasible} p291(?X0) :- p290(?X0).
+
+@{rq291} @@{defeasible} q291(?X0) :- q290(?X0).
+
+@{rs291} @@{defeasible} s291(?X0) :- s290(?X0).
+
+@{rp292} @@{defeasible} p292(?X0) :- p291(?X0).
+
+@{rq292} @@{defeasible} q292(?X0) :- q291(?X0).
+
+@{rs292} @@{defeasible} s292(?X0) :- s291(?X0).
+
+@{rp293} @@{defeasible} p293(?X0) :- p292(?X0).
+
+@{rq293} @@{defeasible} q293(?X0) :- q292(?X0).
+
+@{rs293} @@{defeasible} s293(?X0) :- s292(?X0).
+
+@{rp294} @@{defeasible} p294(?X0) :- p293(?X0).
+
+@{rq294} @@{defeasible} q294(?X0) :- q293(?X0).
+
+@{rs294} @@{defeasible} s294(?X0) :- s293(?X0).
+
+@{rp295} @@{defeasible} p295(?X0) :- p294(?X0).
+
+@{rq295} @@{defeasible} q295(?X0) :- q294(?X0).
+
+@{rs295} @@{defeasible} s295(?X0) :- s294(?X0).
+
+@{rp296} @@{defeasible} p296(?X0) :- p295(?X0).
+
+@{rq296} @@{defeasible} q296(?X0) :- q295(?X0).
+
+@{rs296} @@{defeasible} s296(?X0) :- s295(?X0).
+
+@{rp297} @@{defeasible} p297(?X0) :- p296(?X0).
+
+@{rq297} @@{defeasible} q297(?X0) :- q296(?X0).
+
+@{rs297} @@{defeasible} s297(?X0) :- s296(?X0).
+
+@{rp298} @@{defeasible} p298(?X0) :- p297(?X0).
+
+@{rq298} @@{defeasible} q298(?X0) :- q297(?X0).
+
+@{rs298} @@{defeasible} s298(?X0) :- s297(?X0).
+
+@{rp299} @@{defeasible} p299(?X0) :- p298(?X0).
+
+@{rq299} @@{defeasible} q299(?X0) :- q298(?X0).
+
+@{rs299} @@{defeasible} s299(?X0) :- s298(?X0).
+
+@{rp300} @@{defeasible} p300(?X0) :- p299(?X0).
+
+@{rq300} @@{defeasible} q300(?X0) :- q299(?X0).
+
+@{rs300} @@{defeasible} s300(?X0) :- s299(?X0).
+
+\opposes(ns(?X0), s(?X0)).
+\opposes(np300(?X0), p300(?X0)).

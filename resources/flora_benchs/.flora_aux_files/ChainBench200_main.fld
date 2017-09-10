@@ -1,0 +1,610 @@
+/************************************************************************
+  file: includes/flrheader.flh
+
+  Author(s): Guizhen Yang
+	     Michael Kifer
+
+  Copyright (C) by
+       The Research Foundation of the State University of New York, 1999-2013.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+       http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+
+  This file is automatically included by the FLORA-2 compiler.
+************************************************************************/
+
+
+/************************************************************************
+  Note: This file should contain Macros only!
+
+  If FLORA_DUMP is defined: preprocessing for user-friendly output.
+
+  If any of these macros are changed, the corresponding wrappers in
+  flrwrapper.P must also be changed
+************************************************************************/
+
+
+
+
+/* File:      flora_prefix.flh -- FLORA-2 prefixes
+**
+** Author(s): Michael Kifer
+**	      Guizhen Yang
+**
+** Contact:   flora-users@lists.sourceforge.net
+**
+** Copyright (C) by
+**      The Research Foundation of the State University of New York, 1999-2013;
+**      and Vulcan, Inc., 2008-2013.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**      http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+**
+*/
+
+
+/******************************************************************************
+  Flora prefix
+
+  All Flora symbols begin with this prefix.
+******************************************************************************/
+/* Prefix for F-logic and HiLog predicates */
+
+
+
+
+
+/******************************************************************************
+  Attaching FLORA_PREFIX
+
+  The argument to this Macro should be quoted.
+******************************************************************************/
+
+
+
+/******************************************************************************
+  Strings following FLORA_PREFIX
+
+  These strings should be quoted.
+******************************************************************************/
+/* Keep "mod" in the name of a formula wrapper right after FLORA_PREFIX
+   We rely on this to identify meta wrappers */
+
+
+
+/*  Trie for keeping skeletons of defined facts -- debugging */
+
+
+/*  Trie for storing used symbols names */
+
+
+
+
+/******************************************************************************
+  Module and trie prefixes
+******************************************************************************/
+/* prefix to construct Flora module predicates. */
+
+
+/*  prefix to name Flora storage trie for a module. */
+
+
+
+/* prefix to name Flora fld storage trie for a module. */
+
+
+/* prefix to name Flora fls storage trie for a module. */
+
+
+
+/****************************************************************************
+  F-logic atom prefixes for predicates that are used to distinguish F-logic
+  wrappers in the trailers, the user program, base facts, etc.
+****************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************
+  Lengths of prefixes of F-logic wrappers
+******************************************************************************/
+
+
+
+/****************************************************************************
+  Prefixes that are used for F-logic wrappers in rule bodies of user programs.
+  They are called "debuggin prefixes" because they were introduced to help
+  implement the debugging feature that catches undefined methods.
+  Note:
+     naf^, dyna^, dynz^ are the outermost prefixes
+     neg^ is the next outermost
+****************************************************************************/
+
+
+
+
+
+
+
+
+
+
+/* Prefixes used for checking undefinedness */
+
+
+
+/* Corresponding 1-arg macros */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******* these are used in inheritance closure axioms *******/
+
+
+
+
+
+
+
+
+
+/******* these are for transactions in LIBMOD *******/
+
+
+
+
+
+
+
+/******************************************************************************
+  Lengths of prefixes that are used in the wrappers to the left of module name
+
+  Note: We need to remember that these prefixes are enclosed in quotes.
+        But we need the actual atom length that Prolog uses. So, we deduct 2.
+******************************************************************************/
+
+
+
+/* length of FLORA_PREFIX'FLORA_MODULE_TAG */
+
+
+
+
+
+
+
+
+
+
+
+
+
+%% support for undefinedness checks
+
+
+%% used for generating new oids statically
+%% We had previously #1'FLORA_COMPILATION_ID', but this caused gpp error in
+%% \dump(file). Apparently a gpp bug. So changed to X'FLORA_COMPILATION_ID'
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************************************************
+  file: includes/flr_fld_standardtypes.flh
+
+  Author(s): Michael Kifer
+
+  Copyright (C) by
+       The Research Foundation of the State University of New York, 1999-2013.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+       http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+
+  This file is automatically included by the FLORA-2 compiler in every FLD file.
+  This file is for comands that are to be executed once per module.
+
+  Makes the builtin classes \integer, \decimal, etc., defined
+************************************************************************/
+
+/* File:      flora_datatype_symbols.flh -- FLORA-2 datatype names
+**
+** Author(s): Michael Kifer
+**
+** Contact:   flora-users@lists.sourceforge.net
+**
+** Copyright (C) by
+**      The Research Foundation of the State University of New York, 1999-2013.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**      http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+**
+**
+*/
+
+
+
+/* Data types */
+
+
+
+
+
+
+
+
+
+
+/* \real is synonymized with \double */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* constants used for parsing */
+
+
+
+/* Constant used in the parsed result */
+
+
+
+/* these prefixes are added to atoms that are supposed to represent the
+   data types \string, \iri, etc. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'_$_$_flora''mod''main''sub'(__newvar1,'\\object',__newvar2).
+'_$_$_flora''mod''main''sub'(__newvar1,'\\long',__newvar2).
+'_$_$_flora''mod''main''sub'(__newvar1,'\\integer',__newvar2).
+'_$_$_flora''mod''main''sub'(__newvar1,'\\short',__newvar2).
+'_$_$_flora''mod''main''sub'(__newvar1,'\\decimal',__newvar2).
+'_$_$_flora''mod''main''sub'(__newvar1,'\\double',__newvar2).
+'_$_$_flora''mod''main''sub'(__newvar1,'\\real',__newvar2).
+'_$_$_flora''mod''main''sub'(__newvar1,'\\float',__newvar2).
+'_$_$_flora''mod''main''sub'(__newvar1,'\\symbol',__newvar2).
+'_$_$_flora''mod''main''sub'(__newvar1,'\\string',__newvar2).
+'_$_$_flora''mod''main''sub'(__newvar1,'\\dateTime' ,__newvar2).
+'_$_$_flora''mod''main''sub'(__newvar1,'\\date' ,__newvar2).
+'_$_$_flora''mod''main''sub'(__newvar1,'\\duration' ,__newvar2).
+'_$_$_flora''mod''main''sub'(__newvar1,'\\time' ,__newvar2).
+'_$_$_flora''mod''main''sub'(__newvar1,'\\iri' ,__newvar2).
+'_$_$_flora''mod''main''sub'(__newvar1,'\\boolean',__newvar2).
+'_$_$_flora''mod''main''sub'(__newvar1,'\\list' ,__newvar2).
+'_$_$_flora''mod''main''sub'(__newvar1,'\\charlist',__newvar2).
+
+
+'_$_$_flora''mod''main''tblflapply'(p134_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p76_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p163_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p146_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p22_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p30_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p98_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p109_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p179_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p51_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p34_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p33_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p92_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p59_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p32_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p25_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p197_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p158_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p141_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p17_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p87_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p104_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p196_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p174_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p45_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p120_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p4_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p153_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p8_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p130_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p136_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p82_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p169_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p191_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p100_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p115_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p185_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p57_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p40_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p65_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p47_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p123_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p148_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p135_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p77_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p164_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p23_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p31_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p99_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p52_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p35_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p93_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p110_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p180_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p60_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p13_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p198_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p159_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p18_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p142_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p88_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p105_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p200_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p175_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p12_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p121_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p46_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p5_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p154_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p9_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p131_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p137_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p83_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p170_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p192_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p116_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p58_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p41_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p186_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p124_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p149_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p66_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p78_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p165_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p68_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p187_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p36_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p111_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p181_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p53_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p0_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p61_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p199_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p160_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p19_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p143_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p27_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p89_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p106_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p176_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p48_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p133_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p122_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p6_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p94_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p70_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p10_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p132_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p155_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p138_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p14_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p84_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p101_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p171_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p193_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p2_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p42_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p117_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p125_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p150_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p67_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p166_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p79_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p69_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p188_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p37_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p112_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p182_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p54_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p62_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p20_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p74_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p161_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p144_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p28_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p90_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p107_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p177_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p49_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p7_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p95_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p11_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p156_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p139_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p15_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p1_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p102_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p172_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p85_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p194_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p43_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p118_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p126_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p151_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p128_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p80_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p167_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p189_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p38_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p113_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p183_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p55_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p63_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p71_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p73_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p75_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p162_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p145_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p21_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p29_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p97_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p108_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p178_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p50_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p91_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p96_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p72_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p24_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p157_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p140_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p16_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p103_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p86_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p195_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p173_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p44_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p119_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p3_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p127_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p152_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p129_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p81_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p168_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p190_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p39_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p26_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p114_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p184_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p56_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p147_0,__fldnewvar1,__fldnewvar2).
+'_$_$_flora''mod''main''tblflapply'(p64_0,__fldnewvar1,__fldnewvar2).

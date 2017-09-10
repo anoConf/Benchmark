@@ -1,0 +1,5 @@
+%% #include info for source file: /home/hamhec/workspace/java/defeasible-tools-benchmark/resources/flora_benchs/ChainBench2000.flr
+
+
+:-(multifile(/('_$_$_flora''include_prj_info',2))).
+'_$_$_flora''include_prj_info'('/home/hamhec/workspace/java/defeasible-tools-benchmark/resources/flora_benchs/ChainBench2000.flr','(runtime)').

@@ -1,0 +1,5 @@
+flora_symbol(p0,1,\@,61,5,predicate_symbol,nontransactional_symbol,'CircleBench2.flr').
+flora_symbol(p1,1,\@,54,5,predicate_symbol,nontransactional_symbol,'CircleBench2.flr').
+flora_symbol(np0,1,\@,32,3,predicate_symbol,nontransactional_symbol,'CircleBench2.flr').
+flora_symbol(a0,0,\@,19,2,function_symbol,nontransactional_symbol,'CircleBench2.flr').
+flora_symbol(tp,1,\@,17,2,predicate_symbol,nontransactional_symbol,'CircleBench2.flr').
