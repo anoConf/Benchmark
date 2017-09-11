@@ -5,6 +5,8 @@ Defeasible benchmark that can be used to classify defeasible reasoning tools bas
 ## How to Run?
 
 It is recommended to run the benchmark using command line, it is also possible to run it directly. See [BenchLaucher.java](https://github.com/anoConf/Benchmark/blob/master/src/main/java/anon/defeasible/benchmark/BenchLauncher.java). 
+Please note that for blind review reasons, a necessary library has been omitted, and as such the benchmark cannot be run for now. However, this library is going to be made public after the review process.
+If you are in a hurry, please submit an issue in this github page. 
 
 ## Test Theories
 
